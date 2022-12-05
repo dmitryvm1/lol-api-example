@@ -1,0 +1,348 @@
+$defeat-light: #FFe1e3;
+$defeat-mid: #faa;
+$defeat-dark: #E74156;
+$victory-light: #ddf;
+$victory-mid: #99f;
+$victory-dark: #44f;
+$damage-bar-width: 50px;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+th {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.feed-entry {
+    
+}
+
+.details-container {
+    margin-bottom: 0.5em;
+}
+
+.details-container table {
+    width: 100%;
+}
+
+
+.match-entry {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    border-left: 5px solid;
+    margin-bottom: 0.5em;
+}
+
+.player-overview {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.participants {
+    padding-left: 3em;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.pnsm {
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.pnsm a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pnsm a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.col-p-team {
+    padding-left: 1em;
+    width: 120px;
+}
+.col-o-team {
+    width: 120px;
+    padding-left: 1em;
+}
+.participant-small {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+}
+
+.smch {
+    border-radius: 3px;
+    margin-right: 2px;
+    flex-shrink: 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.smitem {
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+.smitem-empty {
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+.defeat .action {
+    background-color: $defeat-mid;
+    color: $defeat-dark;
+}
+.victory .action {
+    background-color: $victory-mid;
+    color: $victory-dark;
+}
+
+.defeat .action:hover {
+    background-color: $defeat-dark;
+    color: $defeat-mid;
+}
+.victory .action:hover {
+    background-color: $victory-dark;
+    color: $victory-mid;
+}
+
+.defeat .smitem-empty {
+    background-color: $defeat-mid;
+}
+.victory .smitem-empty {
+    background-color: $victory-mid;
+}
+
+.defeat {
+    background-color: $defeat-light;
+    border-color: $defeat-dark;
+}
+
+.victory {
+    background-color: $victory-light;
+    border-color: $victory-dark;
+}
+
+.mh-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.update {
+    align-self: flex-end;
+    color: gray;
+}
+
+.match-entry .left {
+    flex-grow: 1;
+    padding-right: 24px;
+    padding-left:1em;
+    align-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.when {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.champion {
+    padding-right: 0.3em;
+    
+}
+.champion div {
+    border-radius: 24px;
+    border: 1px solid gray;
+}
+
+.kda-h {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.kda {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.k_ {
+    align-self: center;
+}
+.d_ {
+    align-self: center;
+    color: $defeat-dark;
+}
+.a_ {
+    align-self: center;
+}
+
+.prow1 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.dmg-container {
+    width: $damage-bar-width;
+    height: 5px;
+    margin: 0px 5px;
+    background-color: white;
+}
+
+.dealt {
+    background-color: $defeat-dark;
+    height: 100%;
+}
+
+.taken {
+    background-color: gray;
+    height: 100%;
+}
+
+td {
+    font-size: 14px;
+}
+
+.td-kda {
+    text-align: center;
+}
+
+.when {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.len {
+    font-size: 12px;
+}
+
+.td-cs {
+    text-align: center;
+}
+
+.td-damage {
+    text-align: center;
+    width: $damage-bar-width;
+}
+
+.td-damage>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 14px;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+}
+
+.spells-perks div>div {
+    margin: 1px;
+    border-radius: 6px;
+}
+.spells-perks div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.spells-perks {
+    display: flex;
+    flex-direction: row;
+    width: 45px;
+}
+
+.kda {
+    padding-left: 1em;
+}
+
+.exp-items {
+    text-align: center;
+    width:0.1%;
+    white-space: nowrap;
+}
+
+.exp-player-name {
+    margin: auto 0;
+}
+
+.vertical {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.td-dmg-txt {
+    font-size: 12px;
+    text-align: center;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.action {
+    position: relative;
+    width: 26px;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .aright {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .aleft {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .aup {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .adown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .loading {
+    align-self: center;
+  }

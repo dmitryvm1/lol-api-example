@@ -1,0 +1,19 @@
+.summoner-rank {
+    display: flex;
+    flex-direction: row;
+}
+
+.rank {
+    align-self: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.tier {
+    font-weight: bold;
+}
+
+.winloss {
+    align-self: center;
+    color: grey;
+}

@@ -1,0 +1,1 @@
+export const runes = {"8000":{"name":"Precision","image":"7201_Precision.png"},"8100":{"name":"Domination","image":"7200_Domination.png"},"8200":{"name":"Sorcery","image":"7202_Sorcery.png"},"8300":{"name":"Inspiration","image":"7203_Whimsy.png"},"8400":{"name":"Resolve","image":"7204_Resolve.png"}}
